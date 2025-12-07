@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClickSnitch – Scan URL</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+<header>
+  <div class="logo">ClickSnitch ⚡</div>
+  <nav>
+    <a href="index.html">Scan</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="learn.html">Learn</a>
+  </nav>
+</header>
+
+<main class="scanner-main">
+  <h1>Detect Phishing Links Instantly</h1>
+
+  <div class="card">
+    <input type="text" id="urlInput" placeholder="https://example.com/login"/>
+    <button onclick="scanURL()">Scan Now</button>
+
+    <!-- RISK GAUGE -->
+    <div class="gauge">
+      <div id="statusLabel" class="gauge-label">Status: Unknown</div>
+      <div id="gaugeCircle" class="gauge-circle">
+        <span id="gaugeText">--</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="recent-scans card">
+    <h2>Recent Scans</h2>
+    <ul id="recentScans"></ul>
+  </div>
+</main>
+
+<footer>
+  <a href="#">About</a>
+  <a href="#">Privacy</a>
+  <a href="#">Contact</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
